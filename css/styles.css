@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body {
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.rooles {
+    margin: 0 40px;
+    max-width: 290px;
+    
+}
+
+.rooles__header {}
+
+.rooles__description {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.gameWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game {}
+
+.free {
+    text-align: center;
+    font-size: 3em;
+    color: #666;
+    height: 100px;
+    width: 100px;
+    background-color: #eee;
+}
+
+.settings {
+    margin: 0 40px;
+    width: 290px;
+}
+
+.settings__form {
+    font-size: 1.5em;
+}
+
+.form__text {
+    font-size: 1em;
+    height: 1.2em;
+    width: 100%;
+}
+
+.form__button {
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+    margin: 20px 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+.form__button:hover {
+    background-color: #952df5; 
+}
+
+.form__button:active {
+    background-color: #6d22b2;
+}
+
+.gameWrapper__startButton {
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+    margin: 20px 0;
+    width: 100%;
+    font-size: 2em;
+    color: #fff;
+}
+
+.gameWrapper__startButton:hover {
+    background-color: #952df5;
+}
+
+.gameWrapper__startButton:active {
+    background-color: #6d22b2;
+}
+
+.gameWrapper__startButton:disabled {
+    background-color: #d1c2de;
+}
+
+.statusBar {
+    margin: 10px 0;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 1em;
+}

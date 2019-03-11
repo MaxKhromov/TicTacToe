@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="rooles">
+            <h1 class="rooles__header">Правила игры</h1>
+            <span class="rooles__description">
+                <p>Игроки по очереди ставят на свободные клетки поля знаки. Первый, выстроивший в ряд 3 или больше своих фигур по вертикали, горизонтали или диагонали, выигрывает. Первый ход делает случайным образом выбранный игрок.</p>
+            </span>
+        </div>
+        <div class="gameWrapper">
+           <input class="gameWrapper__startButton" id="startButton" type="button" value="Начать игру" onclick="startTheGame()">
+           <div id="statusBar" class="statusBar">Начните игру...</div>
+            <table id="game"></table>
+        </div>
+        <div class="settings">
+            <h1 class="form__header">Настройки игры</h1>
+            <form class="settings__form">
+                <p>
+                    Размер игрового поля:<br>
+                    <input id="inputFieldSize" class="form__text" type="text">
+                </p>
+                <p>
+                    Количество игроков:<br>
+                    <input id="inputPlayersAmount" class="form__text" type="text">
+                </p>
+                <p>
+                    Клеток для победы:<br>
+                    <input id="inputWinCellsAmount" class="form__text" type="text">
+                </p>
+                <p>
+                    <input class="form__button" type="button" value="Обновить" onclick="renderer.settingsUpdate()">
+                </p>
+            </form>
+        </div>
+        
+    </div>
+    <script src="scripts/settings.js"></script>
+    <script src="scripts/field.js"></script>
+    <script src="scripts/renderer.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
